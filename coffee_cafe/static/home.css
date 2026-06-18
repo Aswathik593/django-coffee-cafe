@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)),
+          url("/static/images/coffee1.png");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:700;
+    color:#f8d49d;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#f8d49d;
+}
+
+.hero-content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    text-shadow:2px 2px 15px rgba(0,0,0,0.5);
+}
+
+.hero-content p{
+    max-width:700px;
+    font-size:1.1rem;
+    line-height:1.8;
+    margin-bottom:35px;
+    color:#f1f1f1;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:14px 35px;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.primary{
+    background:#c68b59;
+    color:white;
+}
+
+.primary:hover{
+    background:#b37442;
+    transform:translateY(-3px);
+}
+
+.secondary{
+    border:2px solid white;
+    color:white;
+}
+
+.secondary:hover{
+    background:white;
+    color:#333;
+    transform:translateY(-3px);
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero-content h1{
+        font-size:2.5rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+}

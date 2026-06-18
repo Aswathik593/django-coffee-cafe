@@ -1,0 +1,34 @@
+body{
+    font-family: Arial;
+    background:#a30620,url("/static/images/coffee1.png");
+    text-align:center;
+    padding:40px;
+}
+
+h1{
+    color:#cacc43;
+}
+
+form{
+    width:300px;
+    margin:auto;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#5c4033;
+    color:white;
+    border:none;
+}
+
+a{
+    text-decoration:none;
+    margin:10px;
+}
